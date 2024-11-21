@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css' integrity='sha512-VcyUgkobcyhqQl74HS1TcTMnLEfdfX6BbjhH8ZBjFU9YTwHwtoRtWSGzhpDVEJqtMlvLM2z3JIixUOu63PNCYQ==' crossorigin='anonymous'/><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css' integrity='sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw==' crossorigin='anonymous'/>
     <title>Bootstrap</title>
+
 </head>
 <body>
 
@@ -40,6 +42,8 @@
         </nav>
     </header>
 
+    <!--main-->
+
     <main>
       <div class="container my-5">
           <div class="row">
@@ -49,6 +53,32 @@
                       <h2>Catalogo Libri</h2>
                       <button type="button" class="btn btn-primary">Aggiungi libro</button>
                   </div>
+
+                  <!--table title-->
+                  <table class="table table-striped my-3">
+                    <thead>
+                    <tr>
+                        <th scope="col">Titolo</th>
+                        <th scope="col" class="d-none d-md-table-cell">Data prestito</th>
+                        <th scope="col">Stato</th>
+                        <th scope="col" class="text-center">Azioni</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                      <!--prima riga-->
+                      
+                      <tr>
+                        <td>I pilastri della terra</td>
+                        <td class="d-none d-md-table-cell">-</td>
+                        <td><span class="badge bg-success">Disponibile</span></td>
+                        <td class="d-flex justify-content-center">
+                            <button type="button" class="btn text-secondary border-secondary me-1"><i class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn text-secondary border-secondary"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
               </div>
           </div>
       </div>
